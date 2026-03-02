@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakhi Collective — Curated for You. Perfect for Every Occasion.</title>
+<meta name="description" content="Sakhi Collective — Handpicked women's accessories, bridal bangles, matching jewelry sets from local Indian artisans. Order via WhatsApp.">
+<meta name="keywords" content="women accessories India, bridal bangles, matching jewelry sets, boutique accessories, wedding accessory sets, Indian bridal jewelry, kundan jewelry, gold bangles">
+<meta property="og:title" content="Sakhi Collective — Curated Indian Accessories">
+<meta property="og:description" content="Handpicked bangles, earrings, chains, anklets and matching sets for every Indian woman.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/91?text=Hi%20Sakhi%20Collective!%20I'd%20love%20to%20browse%20your%20collection." class="floating-wa" target="_blank" rel="noopener">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png" alt="WhatsApp" width="22" height="22">
+  <span>Order on WhatsApp</span>
+</a>
+
+<div class="toast" id="toast"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="m-close" onclick="closeMobile()">✕ Close</button>
+  <a href="#" onclick="go('home');closeMobile()">Home</a>
+  <a href="#" onclick="go('shop');closeMobile()">Collection</a>
+  <a href="#" onclick="go('about');closeMobile()">Our Story</a>
+  <a href="#" onclick="go('vendor');closeMobile()">Join as Vendor</a>
+  <a href="https://instagram.com/sakhi.collective" target="_blank">Instagram ↗</a>
+  <a href="https://wa.me/91" target="_blank" class="m-wa">WhatsApp Order ↗</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" onclick="go('home')">Sakhi Collective</a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="go('home')">Home</a></li>
+    <li><a href="#" onclick="go('shop')">Collection</a></li>
+    <li><a href="#" onclick="go('about')">Our Story</a></li>
+    <li><a href="#" onclick="go('vendor')">Vendors</a></li>
+    <li><a href="https://instagram.com/sakhi.collective" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/120px-Instagram_icon.png" alt="Instagram" width="18" height="18" style="vertical-align:middle;opacity:0.7;">
+    </a></li>
+    <li><a href="https://wa.me/91" target="_blank" class="nav-cta">Order Now</a></li>
+  </ul>
+  <button class="hamburger" onclick="openMobile()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ════════════════════════ PAGE: HOME ════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media">
+      <img
+        src="{css,js,images}/landing3.jpg?w=1600&q=85&fit=crop"
+        alt="Indian bride with jewelry"
+        class="hero-img"
+        fetchpriority="high"
+      >
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-pre">Handcrafted · Curated · Timeless</div><br>
+      <div class="hero-badge">♡ Welcome to Sakhi Collective</div>
+      <h1>Curated for <em>You.</em><br>Perfect for Every Occasion.</h1>
+      <div class="hero-line"></div>
+      <p>Finding the perfect match for your outfit should be effortless. We curate elegant accessories and matching sets so you can shine at every occasion — from bridal ceremonies to festive celebrations.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary" onclick="go('shop')">Explore Collection</a>
+        <a href="https://wa.me/91?text=Hi!%20I'd%20love%20to%20know%20more%20about%20your%20collection." target="_blank" class="btn-ghost">Chat with Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Pieces</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">2K+</span><span class="stat-label">Women Served</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Local Artisans</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('occasions-anchor').scrollIntoView({behavior:'smooth'})">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- OCCASIONS -->
+  <section class="occasions-section" id="occasions-anchor">
+    <div class="section-header">
+      <div class="eyebrow">Shop With Purpose</div>
+      <h2 class="section-title">Browse by <em>Occasion</em></h2>
+      <p class="section-sub">Find curated pieces for your most cherished moments.</p>
+    </div>
+    <div class="occasions-grid">
+      <div class="occ-card" onclick="occFilter('Wedding')" style="--occ-img:url('{css,js,images}/wedding1.jpg?w=400&q=80&fit=crop')">
+        <div class="occ-bg"></div>
+        <div class="occ-body">
+          <img src="{css,js,images}\wedding1.jpg?w=300&q=75&fit=crop" alt="Wedding" class="occ-photo">
+          <div class="occ-overlay"></div>
+          <div class="occ-label">Wedding</div>
+        </div>
+      </div>
+      <div class="occ-card" onclick="occFilter('Festival')" >
+        <div class="occ-body">
+          <img src="{css,js,images}\festival1.jpg?w=300&q=75&fit=crop" alt="Festival" class="occ-photo">
+          <div class="occ-overlay"></div>
+          <div class="occ-label">Festival</div>
+        </div>
+      </div>
+      <div class="occ-card" onclick="occFilter('Party')">
+        <div class="occ-body">
+          <img src="{css,js,images}\party1.png?w=300&q=75&fit=crop" alt="Party" class="occ-photo">
+          <div class="occ-overlay"></div>
+          <div class="occ-label">Party</div>
+        </div>
+      </div>
+      <div class="occ-card" onclick="occFilter('Office')">
+        <div class="occ-body">
+          <img src="{css,js,images}\office_hairbands.jpg?w=300&q=75&fit=crop" alt="Office" class="occ-photo">
+          <div class="occ-overlay"></div>
+          <div class="occ-label">Office</div>
+        </div>
+      </div>
+      <div class="occ-card" onclick="occFilter('College')">
+        <div class="occ-body">
+          <img src="{css,js,images}\college4.jpg?w=300&q=75&fit=crop" alt="College" class="occ-photo">
+          <div class="occ-overlay"></div>
+          <div class="occ-label">College</div>
+        </div>
+      </div>
+      <div class="occ-card" onclick="occFilter('Casual')">
+        <div class="occ-body">
+          <img src="{css,js,images}\casual1.jpg?w=300&q=75&fit=crop" alt="Casual" class="occ-photo">
+          <div class="occ-overlay"></div>
+          <div class="occ-label">Casual</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured-section">
+    <div class="section-header">
+      <div class="eyebrow">Handpicked for You</div>
+      <h2 class="section-title">Featured <em>Collection</em></h2>
+      <p class="section-sub">Our most-loved pieces — each one curated to elevate your look.</p>
+    </div>
+    <div class="products-grid" id="featuredProducts"></div>
+    <div class="center-btn">
+      <a href="#" class="btn-primary" onclick="go('shop')">View Full Collection →</a>
+    </div>
+  </section>
+
+  <!-- INQUIRY STRIP -->
+  <div class="inquiry-strip">
+    <div class="inq-inner">
+      <div class="inq-text">
+        <h3>Ready to order?</h3>
+        <p>Message us on WhatsApp or Instagram — we respond within minutes.</p>
+      </div>
+      <div class="inq-btns">
+        <a href="https://wa.me/91?text=Hi%20Sakhi%20Collective!%20I%20want%20to%20browse%20your%20collection." target="_blank" class="btn-wa-lg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png" alt="WhatsApp" width="20" height="20">
+          WhatsApp Enquiry
+        </a>
+        <a href="https://instagram.com/sakhi.collective" target="_blank" class="btn-insta-lg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/120px-Instagram_icon.png" alt="Instagram" width="20" height="20">
+          DM on Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="categories-section">
+    <div class="section-header">
+      <div class="eyebrow">Our Range</div>
+      <h2 class="section-title">Shop by <em>Category</em></h2>
+      <p class="section-sub">Bangles, earrings, chains, rings, anklets, hair accessories — we have it all.</p>
+    </div>
+    <div class="cat-masonry" id="catGrid"></div>
+  </section>
+
+  <!-- WHY SAKHI -->
+  <section class="why-section">
+    <div class="why-left">
+      <img src="{css,js,images}/woman1.jpg?w=500&q=85&fit=crop&crop=faces" alt="Indian bride with jewelry" class="why-img" loading="lazy">
+      <div class="why-img-badge">
+        <span class="wib-num">2,000+</span>
+        <span class="wib-label">Happy customers</span>
+      </div>
+    </div>
+    <div class="why-right">
+      <div class="eyebrow">The Sakhi Promise</div>
+      <h2 class="section-title">Why Women <em>Choose Us</em></h2>
+      <div class="why-cards">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <div class="why-text-wrap">
+            <h4>Perfect Matching</h4>
+            <p>Every set is curated to complement your outfit — no more mismatched accessories or last-minute rushes.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <div class="why-text-wrap">
+            <h4>Handpicked Quality</h4>
+            <p>Each piece is personally selected for craft, durability, and elegance. Only the finest makes it in.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <div class="why-text-wrap">
+            <h4>Personal WhatsApp Service</h4>
+            <p>Order directly via WhatsApp. We answer every query with warmth and help you find your perfect piece.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">04</div>
+          <div class="why-text-wrap">
+            <h4>Women-Centric Platform</h4>
+            <p>Built by women, for women. We deeply understand your needs and celebrate every occasion with you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM FEED -->
+  <section class="insta-section">
+    <div class="section-header">
+      <div class="eyebrow">Follow Our Journey</div>
+      <h2 class="section-title">@sakhi.<em>collective</em></h2>
+      <p class="section-sub">New arrivals, styling inspiration, and behind-the-scenes moments.</p>
+    </div>
+    <div class="insta-grid" id="instaGrid"></div>
+    <div class="center-btn">
+      <a href="https://instagram.com/sakhi.collective" target="_blank" class="btn-insta-lg" style="margin:0 auto;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/120px-Instagram_icon.png" alt="Instagram" width="20" height="20">
+        Follow on Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Sakhi Collective</span>
+        <p class="footer-tagline">Curated for You. Perfect for Every Occasion.</p>
+        <p class="footer-about">A women-centric platform curating the finest accessories from local artisans across India. Supporting small vendors while making every woman feel beautifully adorned.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/91" target="_blank" class="soc-btn wa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png" alt="WhatsApp" width="18" height="18"> Connect with us!
+          </a>
+          <a href="https://instagram.com/sakhi.collective" target="_blank" class="soc-btn ig">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/120px-Instagram_icon.png" alt="Instagram" width="18" height="18"> Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Collection</h4>
+        <ul>
+          <li><a href="#" onclick="go('shop')">All Products</a></li>
+          <li><a href="#" onclick="catFilter('Bangles')">Bangles</a></li>
+          <li><a href="#" onclick="catFilter('Jewelry')">Chains & Necklaces</a></li>
+          <li><a href="#" onclick="catFilter('Earrings')">Earrings</a></li>
+          <li><a href="#" onclick="catFilter('Hair Accessories')">Hair Accessories</a></li>
+          <li><a href="#" onclick="catFilter('Anklets')">Anklets</a></li>
+          <li><a href="#" onclick="catFilter('Rings')">Rings</a></li>
+          <li><a href="#" onclick="catFilter('Bracelets')">Bracelets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Occasions</h4>
+        <ul>
+          <li><a href="#" onclick="occFilter('Wedding')">Wedding</a></li>
+          <li><a href="#" onclick="occFilter('Festival')">Festival</a></li>
+          <li><a href="#" onclick="occFilter('Party')">Party</a></li>
+          <li><a href="#" onclick="occFilter('Office')">Office</a></li>
+          <li><a href="#" onclick="occFilter('College')">College</a></li>
+          <li><a href="#" onclick="occFilter('Casual')">Casual</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#" onclick="go('about')">About Us</a></li>
+          <li><a href="#" onclick="go('vendor')">Join as Vendor</a></li>
+          <li><a href="https://wa.me/91" target="_blank">Contact Us</a></li>
+          <li><a href="https://instagram.com/sakhi.collective" target="_blank">Instagram</a></li>
+        </ul>
+        <div class="footer-domain">sakhi.unntangle.in</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Sakhi Collective · All rights reserved</span>
+      <span>Crafted with ♥ for every Indian woman</span>
+    </div>
+  </footer>
+
+</div><!-- end page-home -->
+
+<!-- ════════════════════════ PAGE: SHOP ════════════════════════ -->
+<div class="page" id="page-shop">
+  <div class="page-hero">
+    <img src="{css,js,images}/1515562141207-7a88fb7ce338?w=1400&q=80&fit=crop" alt="Jewelry collection" class="page-hero-img">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-text">
+      <div class="eyebrow" style="color:var(--gold);">Sakhi Collective</div>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,6vw,4.5rem);color:#fff;">The Full <em>Collection</em></h1>
+      <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;font-weight:300;">Enquire via WhatsApp or Instagram DM for pricing &amp; availability.</p>
+    </div>
+  </div>
+  <div class="filter-bar" id="filterBar">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" onclick="setF('all',this)">All</button>
+    <button class="filter-btn" onclick="setF('Bangles',this)">Bangles</button>
+    <button class="filter-btn" onclick="setF('Earrings',this)">Earrings</button>
+    <button class="filter-btn" onclick="setF('Jewelry',this)">Chains & Necklaces</button>
+    <button class="filter-btn" onclick="setF('Hair Accessories',this)">Hair</button>
+    <button class="filter-btn" onclick="setF('Anklets',this)">Anklets</button>
+    <button class="filter-btn" onclick="setF('Rings',this)">Rings</button>
+    <button class="filter-btn" onclick="setF('Bracelets',this)">Bracelets</button>
+    <button class="filter-btn" onclick="setF('Matching Sets',this)">Matching Sets</button>
+    <button class="filter-btn" onclick="setF('Wedding',this,'occ')">Wedding</button>
+    <button class="filter-btn" onclick="setF('Festival',this,'occ')">Festival</button>
+  </div>
+  <div class="shop-body">
+    <div class="shop-grid" id="shopGrid"></div>
+  </div>
+  <div class="inquiry-strip">
+    <div class="inq-inner">
+      <div class="inq-text"><h3>Love something?</h3><p>Message us to check availability and pricing.</p></div>
+      <div class="inq-btns">
+        <a href="https://wa.me/91?text=Hi%20Sakhi%20Collective!%20I%27d%20like%20to%20enquire." target="_blank" class="btn-wa-lg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png" alt="WhatsApp" width="20" height="20"> WhatsApp
+        </a>
+        <a href="https://instagram.com/sakhi.collective" target="_blank" class="btn-insta-lg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/120px-Instagram_icon.png" alt="Instagram" width="20" height="20"> Instagram DM
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer mini-footer">
+    <div class="footer-bottom" style="border-top:1px solid rgba(201,148,58,0.12);">
+      <span>© 2024 Sakhi Collective · sakhi.unntangle.in</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="#" onclick="go('home')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Home</a>
+        <a href="#" onclick="go('about')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">About</a>
+        <a href="#" onclick="go('vendor')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Vendors</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════ PAGE: PRODUCT DETAIL ════════════════════════ -->
+<div class="page" id="page-product">
+  <div class="pd-page" id="pdContent"></div>
+  <section class="suggested-section">
+    <div class="section-header">
+      <div class="eyebrow">You May Also Love</div>
+      <h2 class="section-title">Similar <em>Pieces</em></h2>
+    </div>
+    <div class="products-grid" id="suggestedProducts"></div>
+  </section>
+  <footer class="site-footer mini-footer">
+    <div class="footer-bottom" style="border-top:1px solid rgba(201,148,58,0.12);">
+      <span>© 2024 Sakhi Collective</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="#" onclick="go('home')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Home</a>
+        <a href="#" onclick="go('shop')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Shop</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════ PAGE: ABOUT ════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <img src="{css,js,images}/wedding3.jpg" alt="Indian jewelry" class="page-hero-img">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-text">
+      <div class="eyebrow" style="color:var(--gold);">Our Story</div>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,6vw,4.5rem);color:#fff;">Born from <em>Love,</em><br>Built for Every Woman</h1>
+    </div>
+  </div>
+  <section class="about-story">
+    <div class="about-story-grid">
+      <div class="about-story-img-wrap">
+        <img src="{css,js,images}/JhumkaAndChoker.jpg?w=700&q=85&fit=crop" alt="Indian jewelry crafting" loading="lazy">
+        <img src="{css,js,images}/festival2.jpg" alt="Jewelry collection" loading="lazy" class="about-img-2">
+      </div>
+      <div class="about-story-text">
+        <div class="eyebrow">The Beginning</div>
+        <h2 class="section-title" style="text-align:left;">Why We Started<br><em>Sakhi Collective</em></h2>
+        <p>It started with a simple frustration: finding the perfect accessories to complete an outfit was always a struggle. Hours spent in crowded markets, mismatched pieces arriving at the doorstep — there had to be a better way.</p>
+        <p>Sakhi Collective was founded with one clear mission — to make Indian women feel effortlessly put-together. Every woman deserves to shine at her sister's wedding, her cousin's festival celebration, and every moment in between.</p>
+        <p>We partner with talented local artisans and vendors from across India — women entrepreneurs, home-based crafters, and small boutique owners — to bring you pieces that carry both quality and soul.</p>
+        <a href="https://wa.me/91?text=Hi%20Sakhi%20Collective!%20I'd%20love%20to%20browse%20your%20collection." target="_blank" class="btn-primary" style="display:inline-flex;margin-top:1rem;">Start Shopping</a>
+      </div>
+    </div>
+  </section>
+  <section class="values-section">
+    <div class="section-header">
+      <div class="eyebrow">What We Stand For</div>
+      <h2 class="section-title">Our <em>Values</em></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <img src="{css,js,images}/woman2.jpg" alt="Women first" class="value-img" loading="lazy">
+        <div class="value-body"><h4>Women First</h4><p>Every decision we make centers around making life easier and more beautiful for women.</p></div>
+      </div>
+      <div class="value-card">
+        <img src="{css,js,images}/local1.jpg" alt="Supporting local" class="value-img" loading="lazy">
+        <div class="value-body"><h4>Supporting Local</h4><p>We partner with local artisans and small vendors, helping Indian craftsmanship flourish.</p></div>
+      </div>
+      <div class="value-card">
+        <img src="{css,js,images}/woman6.jpg" alt="Effortless beauty" class="value-img" loading="lazy">
+        <div class="value-body"><h4>Effortless Beauty</h4><p>We curate so you don't have to. Finding perfect matches should feel joyful, not stressful.</p></div>
+      </div>
+      <div class="value-card">
+        <img src="{css,js,images}/woman3.jpg" alt="Cultural pride" class="value-img" loading="lazy">
+        <div class="value-body"><h4>Cultural Pride</h4><p>Celebrating the richness of Indian craftsmanship, traditions, and aesthetics in every piece.</p></div>
+      </div>
+    </div>
+  </section>
+  <div class="inquiry-strip">
+    <div class="inq-inner">
+      <div class="inq-text"><h3>Ready to explore?</h3><p>Reach us anytime on WhatsApp or Instagram.</p></div>
+      <div class="inq-btns">
+        <a href="https://wa.me/91" target="_blank" class="btn-wa-lg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png" alt="WhatsApp" width="20" height="20"> WhatsApp</a>
+        <a href="https://instagram.com/sakhi.collective" target="_blank" class="btn-insta-lg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/120px-Instagram_icon.png" alt="Instagram" width="20" height="20"> Instagram</a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer mini-footer">
+    <div class="footer-bottom" style="border-top:1px solid rgba(201,148,58,0.12);">
+      <span>© 2024 Sakhi Collective · sakhi.unntangle.in</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="#" onclick="go('home')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Home</a>
+        <a href="#" onclick="go('shop')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Shop</a>
+        <a href="#" onclick="go('vendor')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Vendors</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════ PAGE: VENDOR ════════════════════════ -->
+<div class="page" id="page-vendor">
+  <div class="page-hero">
+    <img src="{css,js,images}/GrowWithSakhi.jpg" alt="Jewelry artisan" class="page-hero-img">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-text">
+      <div class="eyebrow" style="color:var(--gold);">Grow Together</div>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,6vw,4.5rem);color:#fff;">Grow with <em>Sakhi</em><br>Collective</h1>
+      <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;font-weight:300;max-width:500px;">Join India's most curated women's accessories platform and reach thousands of customers.</p>
+    </div>
+  </div>
+  <section class="vendor-benefits-section">
+    <div class="section-header">
+      <div class="eyebrow">Why Join Us</div>
+      <h2 class="section-title">Benefits of <em>Partnering</em></h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-img-wrap"><img src="{css,js,images}/GrowYourReach.jpg" alt="Grow your reach" loading="lazy"></div>
+        <div class="benefit-body">
+          <h4>Grow Your Reach</h4>
+          <p>Access our growing community of 2,000+ customers who actively seek quality Indian accessories and artisan pieces.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-img-wrap"><img src="{css,js,images}/SimpleCommision.jpg" alt="Simple commission" loading="lazy"></div>
+        <div class="benefit-body">
+          <h4>Simple Commission</h4>
+          <p>Transparent 15% commission model. You keep 85% of every sale. No hidden fees, no complex contracts.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-img-wrap"><img src="{css,js,images}/ZeroTechHassle.jpg" alt="Zero tech hassle" loading="lazy"></div>
+        <div class="benefit-body">
+          <h4>Zero Tech Hassle</h4>
+          <p>Orders come via WhatsApp. No complex systems to learn — just focus on your craft while we handle promotion.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-img-wrap"><img src="{css,js,images}/BrandVisibility.jpg" alt="Brand visibility" loading="lazy"></div>
+        <div class="benefit-body">
+          <h4>Brand Visibility</h4>
+          <p>Get featured on our Instagram and website. We help tell your story to our engaged audience of fashion-forward women.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vendor-form-section">
+    <div class="vendor-form-wrap">
+      <h2>Apply to <em>Join</em></h2>
+      <p style="color:rgba(245,237,227,0.45);font-size:0.86rem;margin-bottom:2rem;font-weight:300;">Fill in the form below and we'll reach out to you on WhatsApp within 24 hours.</p>
+      <div class="form-group">
+    <label>Your Name *</label>
+    <input type="text" id="vendorName" placeholder="e.g. Priya Sharma">
+    <small class="error" id="errName"></small>
+  </div>
+
+  <div class="form-group">
+    <label>Business Name *</label>
+    <input type="text" id="vendorBusiness" placeholder="e.g. Priya's Boutique">
+    <small class="error" id="errBusiness"></small>
+  </div>
+
+  <div class="form-group">
+    <label>Phone Number *</label>
+    <input type="tel" id="vendorPhone" placeholder="+91 XXXXX XXXXX">
+    <small class="error" id="errPhone"></small>
+  </div>
+
+  <div class="form-group">
+    <label>Product Category *</label>
+    <select id="vendorCategory">
+      <option value="">Select a category</option>
+      <option>Bangles & Bracelets</option>
+      <option>Jewelry & Necklaces</option>
+      <option>Earrings</option>
+      <option>Hair Accessories</option>
+      <option>Anklets</option>
+      <option>Rings</option>
+      <option>Matching Sets</option>
+      <option>Dress Materials</option>
+      <option>Boutique Services</option>
+      <option>Other Accessories</option>
+    </select>
+    <small class="error" id="errCategory"></small>
+  </div>
+
+  <div class="form-group">
+    <label>Instagram / Website</label>
+    <input type="text" id="vendorInsta" placeholder="instagram.com/yourbrand">
+  </div>
+
+  <div class="form-group">
+    <label>Tell us about your products *</label>
+    <textarea id="vendorAbout"></textarea>
+    <small class="error" id="errAbout"></small>
+  </div>
+
+  <button class="form-submit" onclick="vendorSubmit()">Submit Application</button>
+</div>
+  </section>
+  <footer class="site-footer mini-footer">
+    <div class="footer-bottom" style="border-top:1px solid rgba(201,148,58,0.12);">
+      <span>© 2024 Sakhi Collective · sakhi.unntangle.in</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="#" onclick="go('home')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Home</a>
+        <a href="#" onclick="go('shop')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">Shop</a>
+        <a href="#" onclick="go('about')" style="color:rgba(245,237,227,0.35);text-decoration:none;font-size:0.72rem;">About</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
